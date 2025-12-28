@@ -1,0 +1,63 @@
+version: '3.8'
+
+services:
+  neo4j-catrag:
+    image: neo4j:5.15-community
+    container_name: neo4j-catrag
+    ports:
+      - "7474:7474"  # HTTP
+      - "7687:7687"  # Bolt
+    environment:
+      # Authentication - Use NEO4J_PASSWORD environment variable
+      - NEO4J_AUTH=neo4j/${NEO4J_PASSWORD:-password}
+      
+      # Plugins
+      - NEO4J_PLUGINS=["apoc", "graph-data-science"]
+      
+      # Memory settings (development)
+      - NEO4J_dbms_memory_heap_initial__size=512m
+      - NEO4J_dbms_memory_heap_max__size=2G
+      - NEO4J_dbms_memory_pagecache_size=512m
+      
+      # Security settings
+      - NEO4J_dbms_security_procedures_unrestricted=apoc.*,gds.*
+      - NEO4J_dbms_security_procedures_allowlist=apoc.*,gds.*
+      
+      # Logging
+      - NEO4J_dbms_logs_debug_level=INFO
+      
+      # Transaction timeout
+      - NEO4J_dbms_transaction_timeout=60s
+      
+    volumes:
+      # Persist data
+      - neo4j-data:/data
+      - neo4j-logs:/logs
+      - neo4j-import:/var/lib/neo4j/import
+      - neo4j-plugins:/plugins
+      
+    restart: unless-stopped
+    
+    healthcheck:
+      test: ["CMD-SHELL", "wget --no-verbose --tries=1 --spider http://localhost:7474 || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 40s
+    
+    networks:
+      - catrag-network
+
+volumes:
+  neo4j-data:
+    driver: local
+  neo4j-logs:
+    driver: local
+  neo4j-import:
+    driver: local
+  neo4j-plugins:
+    driver: local
+
+networks:
+  catrag-network:
+    driver: bridge

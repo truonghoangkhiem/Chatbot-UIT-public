@@ -1,0 +1,26 @@
+doc_id,chapter_no,article_no,clause_no,article_id,clause_id,rule_id,rule_name,rule_type,rule_severity,rule_description_vi,rule_formula,concept_id,concept_name,concept_group,keywords
+# Example rows - to be filled by LLM extraction in Phase 2
+
+# Article 14 - Registration credits limit
+QD_790_2022,2,14,1,QD_790_2022_ART_14,QD_790_2022_ART_14_CL_1,QD_790_2022_R_MIN_CREDITS_MAIN_SEM,Giới hạn tối thiểu tín chỉ học kỳ chính,LIMIT,INFO,"Sinh viên được đăng ký tối thiểu 14 tín chỉ trong học kỳ chính","credits >= 14",C_SV_DANG_KY_HOC_TAP,Sinh viên - Đăng ký học tập,STUDENT_RIGHTS,"tín chỉ; đăng ký; học kỳ chính; tối thiểu"
+
+QD_790_2022,2,14,1,QD_790_2022_ART_14,QD_790_2022_ART_14_CL_1,QD_790_2022_R_MAX_CREDITS_MAIN_SEM,Giới hạn tối đa tín chỉ học kỳ chính,LIMIT,INFO,"Sinh viên được đăng ký tối đa 24 tín chỉ trong học kỳ chính; tối đa 30 tín chỉ nếu ĐTBHK >= 8.0","credits <= 24; if gpa_sem >= 8.0 then credits <= 30",C_SV_DANG_KY_HOC_TAP,Sinh viên - Đăng ký học tập,STUDENT_RIGHTS,"tín chỉ; đăng ký; học kỳ chính; tối đa; ĐTBHK"
+
+QD_790_2022,2,14,2,QD_790_2022_ART_14,QD_790_2022_ART_14_CL_2,QD_790_2022_R_MAX_CREDITS_SUMMER,Giới hạn tín chỉ học hè,LIMIT,INFO,"Sinh viên được đăng ký tối đa 10 tín chỉ trong học kỳ hè","credits <= 10",C_SV_DANG_KY_HOC_TAP,Sinh viên - Đăng ký học tập,STUDENT_RIGHTS,"tín chỉ; đăng ký; học kỳ hè; tối đa"
+
+# Article 16 - Academic warning
+QD_790_2022,2,16,1,QD_790_2022_ART_16,QD_790_2022_ART_16_CL_1,QD_790_2022_R_ACADEMIC_WARNING_SEMESTER_GPA,Cảnh báo học vụ theo ĐTBHK,OBLIGATION,WARNING,"Sinh viên bị cảnh báo học vụ nếu ĐTBHK dưới 1.0","if gpa_sem < 1.0 then status = 'warning'",C_SV_XU_LY_HOC_VU,Sinh viên - Xử lý học vụ,ACADEMIC_STATUS,"cảnh báo học vụ; ĐTBHK; điểm trung bình"
+
+QD_790_2022,2,16,2,QD_790_2022_ART_16,QD_790_2022_ART_16_CL_2,QD_790_2022_R_SUSPENSION_CONDITION,Điều kiện đình chỉ học tập,PROHIBITION,CRITICAL,"Sinh viên bị đình chỉ học tập nếu bị cảnh báo học vụ 2 học kỳ liên tiếp","if consecutive_warnings >= 2 then status = 'suspended'",C_SV_XU_LY_HOC_VU,Sinh viên - Xử lý học vụ,ACADEMIC_STATUS,"đình chỉ học tập; cảnh báo; liên tiếp"
+
+# Article 18 - Dual program
+QD_790_2022,2,18,1,QD_790_2022_ART_18,QD_790_2022_ART_18_CL_1,QD_790_2022_R_DUAL_PROGRAM_YEAR_REQUIREMENT,Điều kiện năm học để học 2 chương trình,PERMISSION,INFO,"Sinh viên được phép học 2 chương trình nếu đã hoàn thành năm thứ nhất","if completed_years >= 1 then allow_dual_program = true",C_SV_HOC_2_CHUONG_TRINH,Sinh viên - Học 2 chương trình,STUDENT_RIGHTS,"học 2 chương trình; năm thứ nhất; điều kiện"
+
+QD_790_2022,2,18,1,QD_790_2022_ART_18,QD_790_2022_ART_18_CL_1,QD_790_2022_R_DUAL_PROGRAM_GPA_REQUIREMENT,Điều kiện GPA để học 2 chương trình,PERMISSION,INFO,"Sinh viên được phép học 2 chương trình nếu ĐTBCTL >= 7.0","if gpa_cum >= 7.0 then allow_dual_program = true",C_SV_HOC_2_CHUONG_TRINH,Sinh viên - Học 2 chương trình,STUDENT_RIGHTS,"học 2 chương trình; ĐTBCTL; điểm trung bình tích lũy"
+
+# Article 33 - Graduation requirements
+QD_790_2022,5,33,1,QD_790_2022_ART_33,QD_790_2022_ART_33_CL_1,QD_790_2022_R_GRADUATION_CREDITS,Điều kiện tín chỉ tốt nghiệp,OBLIGATION,CRITICAL,"Sinh viên phải hoàn thành đủ số tín chỉ theo chương trình đào tạo","completed_credits >= required_credits",C_SV_TOT_NGHIEP,Sinh viên - Tốt nghiệp,GRADUATION,"tốt nghiệp; tín chỉ; hoàn thành"
+
+QD_790_2022,5,33,2,QD_790_2022_ART_33,QD_790_2022_ART_33_CL_2,QD_790_2022_R_GRADUATION_GPA,Điều kiện ĐTBCTL tốt nghiệp,OBLIGATION,CRITICAL,"Sinh viên phải đạt ĐTBCTL >= 5.0 để tốt nghiệp","gpa_cum >= 5.0",C_SV_TOT_NGHIEP,Sinh viên - Tốt nghiệp,GRADUATION,"tốt nghiệp; ĐTBCTL; điểm trung bình tích lũy"
+
+QD_790_2022,5,33,3,QD_790_2022_ART_33,QD_790_2022_ART_33_CL_3,QD_790_2022_R_GRADUATION_THESIS,Điều kiện khóa luận tốt nghiệp,OBLIGATION,CRITICAL,"Sinh viên phải hoàn thành khóa luận tốt nghiệp hoặc thực tập với điểm >= 5.0","thesis_score >= 5.0 or internship_score >= 5.0",C_SV_TOT_NGHIEP,Sinh viên - Tốt nghiệp,GRADUATION,"tốt nghiệp; khóa luận; thực tập; điểm số"

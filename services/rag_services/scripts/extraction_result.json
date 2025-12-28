@@ -1,0 +1,82 @@
+{
+  "nodes": [
+    {
+      "id": "quyet_dinh_cap_nhat_quy_che_dao_tao_tin_chi",
+      "type": "Entity",
+      "content": "Quyết định về việc cập nhật Quy chế đào tạo theo học chế tín chỉ cho hệ đại học chính quy của Trường Đại học Công nghệ Thông tin",
+      "metadata": {
+        "page_number": 1
+      }
+    },
+    {
+      "id": "dieu_1",
+      "type": "Article",
+      "content": "Điều 1. Cập nhật Quy chế Đào tạo theo học chế tín chỉ được ban hành theo Quyết định số 790/QĐ-ĐHCNTT ngày 28 tháng 9 năm 2022 của Hiệu trưởng Trường Đại học Công nghệ Thông tin như sau:",
+      "metadata": {
+        "page_number": 1
+      }
+    },
+    {
+      "id": "khoan_1_dieu_1",
+      "type": "Clause",
+      "content": "Khoản 3 Điều 4: Đối với học kỳ hè: Học phí = HPTCHM HKHE × TCHPHM + HPTCHL × TCHPHL + HPTCCT × TCHPCT Trong đó: - Với sinh viên còn trong thời gian học theo thiết kế chương trình đào tạo: HPTCHM HKHE là mức chênh lệch giữa HPTCHM học kỳ hè của khóa tuyển sinh gần nhất và HPTCHM học kỳ chính của từng khóa được quy định trong quy định học phí hiện hành. - Với sinh viên đã quá thời gian học theo thiết kế chương trình đào tạo: HPTCHM HKHE thực hiện theo quy định học phí hiện hành.",
+      "metadata": {
+        "page_number": 1
+      }
+    },
+    {
+      "id": "khoan_2_dieu_12",
+      "type": "Clause",
+      "content": "Khoản 1 Điều 12: Lớp học phần được mở nếu số lượng sinh viên đăng ký tối thiểu là 70 sinh viên đối với các môn học đại cương và các môn học cơ sở của ngành học chung toàn Trường.",
+      "metadata": {
+        "page_number": 2
+      }
+    },
+    {
+      "id": "khoan_1_dieu_14",
+      "type": "Clause",
+      "content": "Mục b khoản 1 Điều 14: Trong học kỳ hè - Tổng số tín chỉ đăng ký không được vượt quá 12 tín chỉ. - Sinh viên được đăng ký học mới, học lại và cải thiện điểm nếu có nhu cầu. Trường thực hiện mở các lớp đủ sĩ số theo quy định, không mở lớp sĩ số ít.",
+      "metadata": {
+        "page_number": 2
+      }
+    },
+    {
+      "id": "khoan_1_dieu_23",
+      "type": "Clause",
+      "content": "Khoản 1 Điều 23: Sinh viên đã thi đạt yêu cầu một học phần thuộc trình độ đại học ở một CSDT khác muốn xin miễn học phần đó thì cần phải làm đơn kèm theo xác nhận (số tiết học, số tín chỉ và bảng điểm) gửi về P.ĐTĐH của Trường trong vòng 1 tháng sau khi bắt đầu học kỳ. Trường có thể yêu cầu sinh viên cung cấp đề cương chi tiết của học phần có xác nhận của nơi sinh viên đã học. Các học phần được công nhận được nhận điểm M.",
+      "metadata": {
+        "page_number": 2
+      }
+    },
+    {
+      "id": "dieu_2",
+      "type": "Article",
+      "content": "Điều 2. Các Ông/Bà Trưởng các Phòng, Ban, Khoa, Bộ môn, đơn vị có liên quan và sinh viên chính quy chịu trách nhiệm thi hành Quyết định này. Quyết định này có hiệu lực kể từ ngày ký.",
+      "metadata": {
+        "page_number": 2
+      }
+    }
+  ],
+  "relations": [
+    {
+      "source": "quyet_dinh_cap_nhat_quy_che_dao_tao_tin_chi",
+      "target": "dieu_1",
+      "type": "CONTAINS",
+      "description": "Quyết định chứa Điều 1"
+    },
+    {
+      "source": "dieu_1",
+      "target": "khoan_1_dieu_1",
+      "type": "CONTAINS",
+      "description": "Điều 1 chứa Khoản 1 (liên quan đến Khoản 3 Điều 4 của văn bản trước)"
+    },
+    {
+      "source": "dieu_2",
+      "target": "khoan_2_dieu_12",
+      "type": "REFERENCES",
+      "description": "Điều 2 dẫn chiếu Điều 2 về nơi nhận"
+    }
+  ],
+  "page_count": 2,
+  "errors": []
+}

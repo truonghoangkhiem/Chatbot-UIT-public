@@ -1,0 +1,85 @@
+{
+  "structure": {
+    "document": {
+      "id": "quyet_dinh",
+      "type": "Document",
+      "title": "Quyết định về việc cập nhật Quy chế đào tạo theo học chế tín chỉ cho hệ đại học chính quy của Trường Đại học Công nghệ Thông tin",
+      "full_text": "ĐẠI HỌC QUỐC GIA TP.HCM\nTRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN\nSố: 4399/QĐ-ĐHCNTT\nCỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM\nĐộc lập - Tự do - Hạnh phúc\nTp. Hồ Chí Minh, ngày 29 tháng 12 năm 2023\nQUYẾT ĐỊNH\nVề việc cập nhật Quy chế đào tạo theo học chế tín chỉ cho hệ đại học chính quy của Trường Đại học Công nghệ Thông tin\nHIỆU TRƯỞNG TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN\nCăn cứ Quyết định số 134/2006/QĐ-TTg, ngày 08 tháng 6 năm 2006 của Thủ tướng Chính phủ về việc thành lập Trường Đại học Công nghệ Thông tin (ĐH CNTT) thuộc Đại học Quốc gia Thành phố Hồ Chí Minh (ĐHQG-HCM);\nCăn cứ Quyết định số 867/QĐ-ĐHQG, ngày 17 tháng 8 năm 2016 của Giám đốc ĐHQG-HCM về việc ban hành quy chế tổ chức và hoạt động của Trường Đại học thành viên và Khoa trực thuộc ĐHQG-HCM;\nCăn cứ Quyết định số 262/QĐ-ĐHQG, ngày 20 tháng 4 năm 2017 của Giám đốc ĐHQG-HCM về việc ban hành Quy chế đào tạo đại học;\nCăn cứ Quyết định số 790/QĐ-ĐHCNTT, ngày 28 tháng 9 năm 2022 của Hiệu trưởng Trường ĐH CNTT về việc ban hành Quy chế đào tạo theo học chế tín chỉ cho hệ đại học chính quy của Trường ĐH CNTT;\nTheo đề nghị của Trưởng phòng Đào tạo Đại học.",
+      "page_range": [
+        1
+      ],
+      "parent_id": null,
+      "metadata": {
+        "source_page": 1
+      }
+    },
+    "chapters": [],
+    "articles": [
+      {
+        "id": "dieu_1",
+        "type": "Article",
+        "title": "Điều 1",
+        "full_text": "2. Khoản 1 Điều 12: Lớp học phần được mở nếu số lượng sinh viên đăng ký tối thiểu là 70 sinh viên đối với các môn học đại cương và các môn học cơ sở ngành học chung toàn Trường.\n3. Mục b khoản 1 Điều 14: Trong học kỳ hè\n- Tổng số tín chỉ đăng ký không được vượt quá 12 tín chỉ.\n- Sinh viên được đăng ký học mới, học lại và cải thiện điểm nếu có nhu cầu. Trường thực hiện mở các lớp đủ sĩ số theo quy định, không mở lớp sĩ số ít.\n4. Khoản 1 Điều 23: Sinh viên đã thi đạt yêu cầu một học phần thuộc trình độ đại học ở một CSĐT khác muốn xin miễn học phần đó thì cần phải làm đơn kèm theo xác nhận (số tiết học, số tín chỉ và bảng điểm) gửi về P.ĐTĐH của Trường trong vòng 1 tháng sau khi bắt đầu học kỳ. Trường có thể yêu cầu sinh viên cung cấp đề cương chi tiết của học phần có xác nhận của nơi sinh viên đã học. Các học phần được công nhận được nhận điểm M.",
+        "page_range": [
+          2
+        ],
+        "parent_id": null,
+        "metadata": {
+          "source_page": 2
+        }
+      },
+      {
+        "id": "dieu_2",
+        "type": "Article",
+        "title": "Điều 2",
+        "full_text": "Các Ông/Bà Trưởng các Phòng, Ban, Khoa, Bộ môn, đơn vị có liên quan và sinh viên chính quy chịu trách nhiệm thi hành Quyết định này.\nQuyết định này có hiệu lực kể từ ngày ký./.",
+        "page_range": [
+          2
+        ],
+        "parent_id": null,
+        "metadata": {
+          "source_page": 2
+        }
+      }
+    ],
+    "clauses": [],
+    "relations": [
+      {
+        "source": "quyet_dinh",
+        "target": "dieu_1",
+        "type": "CONTAINS"
+      },
+      {
+        "source": "quyet_dinh",
+        "target": "dieu_1",
+        "type": "CONTAINS"
+      },
+      {
+        "source": "quyet_dinh",
+        "target": "dieu_2",
+        "type": "CONTAINS"
+      },
+      {
+        "source": "dieu_1",
+        "target": "dieu_2",
+        "type": "FOLLOWS"
+      }
+    ],
+    "page_count": 2,
+    "errors": []
+  },
+  "semantic_nodes": [],
+  "semantic_relations": [],
+  "total_pages": 2,
+  "total_articles_processed": 2,
+  "errors": [
+    {
+      "article_id": "dieu_1",
+      "error": "'\\n  \"entities\"'"
+    },
+    {
+      "article_id": "dieu_2",
+      "error": "'\\n  \"entities\"'"
+    }
+  ]
+}

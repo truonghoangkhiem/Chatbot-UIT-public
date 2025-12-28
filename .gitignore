@@ -1,0 +1,68 @@
+# ===================================================================
+# .gitignore cho dự án Chatbot-UIT
+# ===================================================================
+
+# 1. Bỏ qua file môi trường (QUAN TRỌNG)
+# -------------------------------------------------------------------
+# Chứa các thông tin nhạy cảm như API keys, mật khẩu.
+.env
+.env.local
+.env.development
+.env.production
+!.env.example
+
+# All .env files in subdirectories
+**/.env
+**/.env.local
+!**/.env.example
+
+# 2. Bỏ qua Python bytecode và cache
+# -------------------------------------------------------------------
+# Repo của bạn có rất nhiều thư mục __pycache__, cần bỏ qua chúng.
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 3. Bỏ qua các thư mục môi trường ảo Python
+# -------------------------------------------------------------------
+venv/
+env/
+.venv/
+.env/
+
+# 4. Bỏ qua các file lưu trữ và chỉ mục (Index)
+# -------------------------------------------------------------------
+# Dành riêng cho service RAG, chứa các file index và vector store
+# được sinh ra tự động.
+services/rag_services/storage/
+services/rag_services/data/extraction_results/
+
+# 9. Bỏ qua các file export data lớn
+# -------------------------------------------------------------------
+neo4j_*.json
+nodes.json
+
+# 5. Cấu hình của IDE và Trình soạn thảo
+# -------------------------------------------------------------------
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# 6. Các file liên quan đến kiểm thử (Testing)
+# -------------------------------------------------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 7. File hệ thống của macOS và Windows
+# -------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# 8. File build và phân phối
+# -------------------------------------------------------------------
+build/
+dist/
+*.egg-info/

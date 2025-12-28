@@ -1,0 +1,69 @@
+{
+  "stage1_structure": {
+    "articles": [
+      {
+        "id": "dieu_19",
+        "number": 19,
+        "title": "Điều 19. Điều kiện để chuyển ngành, chuyển chương trình, chuyển trường",
+        "page": 10,
+        "chapter": "Chương 3",
+        "clauses": [
+          {
+            "id": "khoan_1_dieu_19",
+            "content": "Sinh viên được xem xét chuyển ngành/chương trình nếu có đủ các điều kiện sau:\n- Sinh viên đạt điều kiện trúng tuyển của ngành/chương trình đào tạo trong cùng khóa tuyển sinh.\n- Không trong thời gian bị kỷ luật từ cảnh báo trở lên.\n- Không thuộc năm nhất.\n- Đạt số tín chỉ tích lũy tối thiểu quy định tại Khoản 4 Điều 10 và có ĐTBC từ 6,0 trở lên.\n- Được sự chấp thuận của Trưởng khoa/Trưởng bộ môn quản lý ngành/chương trình đào tạo mà sinh viên đang theo học và ngành/chương trình đào tạo sinh viên muốn chuyển đến."
+          },
+          {
+            "id": "khoan_2_dieu_19",
+            "content": "Sinh viên được xem xét chuyển trường nếu có đủ các điều kiện sau:\n- Sinh viên đạt điều kiện trúng tuyển của trường tiếp nhận trong cùng khóa tuyển sinh.\n- Không trong thời gian bị kỷ luật từ cảnh báo trở lên.\n- Có lý do chính đáng được Hiệu trưởng xác nhận.\n- Được sự chấp thuận của Hiệu trưởng trường hiện tại và trường tiếp nhận."
+          }
+        ]
+      },
+      {
+        "id": "dieu_20",
+        "number": 20,
+        "title": "Điều 20. Tổ chức đánh giá môn học",
+        "page": 11,
+        "chapter": "Chương 3",
+        "clauses": [
+          {
+            "id": "khoan_1_dieu_20",
+            "content": "Sinh viên được dự thi kết thúc học phần khi có mặt từ 80% trở lên số buổi học theo thời khóa biểu của học phần đó, trừ những sinh viên được Hiệu trưởng cho phép học chương trình song ngành."
+          },
+          {
+            "id": "khoan_2_dieu_20",
+            "content": "Mỗi học kỳ chính Trường tổ chức một đợt thi tập trung cho các học phần kết thúc trong học kỳ đó. Đối với các học phần mà hình thức thi kết thúc không thuộc đợt thi tập trung thì giảng viên phụ trách học phần có trách nhiệm tổ chức thi và nộp điểm cho P.ĐTĐH đúng thời hạn."
+          }
+        ]
+      },
+      {
+        "id": "dieu_21",
+        "number": 21,
+        "title": "Điều 21. Đánh giá kết quả học tập của học phần, học kỳ, năm học, toàn khóa",
+        "page": 12,
+        "chapter": "Chương 3",
+        "content": "Các loại điểm của học phần được đánh giá theo thang điểm 10. Các thang điểm khác chỉ mang tính tham khảo, chuyển đổi khi cần thiết.\n\nBảng xếp loại và thang điểm tương ứng:\n- Xuất sắc: 9.0 - 10.0\n- Giỏi: 8.0 - 8.9\n- Khá: 7.0 - 7.9\n- Trung bình: 5.5 - 6.9\n- Yếu: 4.0 - 5.4\n- Kém: < 4.0"
+      }
+    ]
+  },
+  "relations": [
+    {
+      "source_article_id": "khoan_1_dieu_19",
+      "target_article_id": "dieu_10",
+      "relation_type": "references",
+      "evidence": "áp dụng cho sinh viên chính quy, yêu cầu tích lũy tín chỉ tối thiểu"
+    },
+    {
+      "source_article_id": "khoan_2_dieu_20",
+      "target_article_id": "dieu_19",
+      "relation_type": "related_to",
+      "evidence": "điều kiện dự thi ảnh hưởng đến điều kiện chuyển ngành"
+    }
+  ],
+  "metadata": {
+    "source_file": "QuyCheDaoTao_UIT_2023.pdf",
+    "doc_type": "regulation",
+    "extraction_date": "2024-12-06",
+    "total_articles": 3,
+    "total_clauses": 5
+  }
+}
